@@ -1,5 +1,12 @@
 # README_AI
 
+## WFS Status
+
+- Current Status: `Candidate`
+- 本システムはWellzFriend Standard策定のベースモデルである。
+- 実運用で改善し、検証済みの知見だけを正式版WFSへ反映する。
+- `Candidate`はWFS成熟度であり、アプリのライフサイクル状態とは別に管理する。
+
 ## 目的
 
 弥生会計等の試算表から作成した正規化明細をDATAへ貼り付け、経営者向けの部門別損益を自動生成する。

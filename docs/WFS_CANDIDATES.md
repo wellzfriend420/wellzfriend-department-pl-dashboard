@@ -2,6 +2,12 @@
 
 本書は正式標準ではなく、部門別PLで検証する候補一覧です。
 
+## Status
+
+**Current Status: Candidate**
+
+このシステムはWellzFriend Standard策定のベースモデルです。運用しながら改善し、正式版WFSへ反映します。
+
 | 候補 | 仮説 | 昇格条件 |
 |---|---|---|
 | DATA/CALC/REPORT/DASHBOARD分離 | 保守とWeb移行が容易 | 3回以上の改修で責務が崩れない |

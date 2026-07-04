@@ -2,6 +2,14 @@
 
 会計試算表を正規化して貼り付け、部門別PL、前月・前年同月比較、利益率、経営グラフを生成するMVPです。
 
+## WFS Status
+
+**Current Status: Candidate**
+
+このシステムはWellzFriend Standard策定のベースモデルです。
+
+運用しながら改善し、正式版WFSへ反映します。
+
 ## 正本
 
 - 利用成果物: Google DriveのGoogleスプレッドシート
