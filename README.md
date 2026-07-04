@@ -1,6 +1,6 @@
 # Department PL Dashboard
 
-会計試算表を正規化して貼り付け、部門別PL、前月・前年同月比較、利益率、経営グラフを生成するMVPです。
+会計試算表を正規化して貼り付け、部門別PL、前月・前年同月比較、利益率、経営グラフを生成するMVPです。親テンプレートの現行版は `v0.2` です。
 
 ## WFS Status
 
@@ -19,6 +19,7 @@
 
 ## Google Sheets
 
+- Template: `TPL_部門別損益ダッシュボード_v0.2`
 - Spreadsheet ID: `1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q`
 - URL: https://docs.google.com/spreadsheets/d/1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q/edit
 
