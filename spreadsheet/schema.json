@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "spreadsheetId": "1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q",
+  "sheets": [
+    "README_AI",
+    "CHANGELOG",
+    "SETTINGS",
+    "DATA",
+    "CALC",
+    "DASHBOARD",
+    "REPORT"
+  ],
+  "departments": ["れんこん加工", "青果加工", "共通"],
+  "plCategories": [
+    "売上高",
+    "原材料費",
+    "外注費",
+    "労務費",
+    "包装資材費",
+    "製造経費",
+    "その他原価",
+    "販管費"
+  ],
+  "allocation": {"enabled": false, "commonDepartment": "共通"}
+}

@@ -1,0 +1,12 @@
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+token*.json
+secrets/
+private/
+data/actual/
+exports/
+*.log
+Thumbs.db
