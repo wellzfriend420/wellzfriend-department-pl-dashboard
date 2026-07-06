@@ -17,6 +17,8 @@
 - CALC: 36 months × `3 departments + total`
 - DASHBOARD: CALCを参照する
 - REPORT: PL集計はCALC、製造経費の勘定科目別内訳はDATAを参照する
+- REPORTの当期累計: SETTINGSの会計年度開始月から表示月まで
+- REPORTの前年同期累計: 当期累計期間の12か月前
 
 ## Rebuild policy
 

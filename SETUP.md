@@ -22,7 +22,7 @@ GitHubからのcloneと、Googleスプレッドシートの導入は別の作業
 |---|---|---|
 | SSD | 開発工房 | cloneしたリポジトリ、設計変更、テスト |
 | GitHub | 設計図書館 | 設計書、README_AI、テスト、変更履歴、コード |
-| Google Drive / Templates | 親テンプレート | `TPL_部門別損益ダッシュボード_v0.2` |
+| Google Drive / Templates | 親テンプレート | `TPL_部門別損益ダッシュボード_v0.3` |
 | Google Drive / Customers | 実運用 | 会社・案件ごとにコピーしたスプレッドシート |
 | 各会社統合DB | 業務データの正本 | 将来連携する会計・業務データ |
 
@@ -44,7 +44,7 @@ cd wellzfriend-department-pl-dashboard
 ## 4. 親テンプレートから実運用ファイルを作る
 
 1. Google Driveで `WellzFriend/Templates/Department PL Dashboard` を開きます。
-2. `TPL_部門別損益ダッシュボード_v0.2` を開き、版が正しいことを確認します。
+2. `TPL_部門別損益ダッシュボード_v0.3` を開き、版が正しいことを確認します。
 3. 親テンプレートを直接編集せず、「コピーを作成」を選びます。
 4. コピー先を `WellzFriend/Customers/<会社名または案件名>` にします。フォルダがなければ作成します。
 5. ファイル名を `<会社名または案件名>_部門別損益ダッシュボード` に変更します。
@@ -79,6 +79,8 @@ cd wellzfriend-department-pl-dashboard
 - DASHBOARDへ選択月の売上・粗利益・営業利益が表示される。
 - REPORTに材料費・労務費・製造経費が売上直下へ表示される。
 - REPORTの製造経費内訳を展開できる。
+- REPORTの当期累計が会計年度開始月から表示月までの合計になっている。
+- REPORTの前年同期累計が前年の同じ期間になっている。
 - 前月・前年同月が意図した月を参照している。
 - `#REF!`、`#DIV/0!`、`#VALUE!`、`#N/A`などのエラーがない。
 
