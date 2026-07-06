@@ -20,6 +20,9 @@
 - KPI: 売上、粗利益、営業利益、粗利率、営業利益率
 - グラフ: 売上推移、利益推移、部門別売上、部門別営業利益
 - 提出資料: A4横1枚のEXECUTIVE_REPORT
+- 成果物1 DASHBOARD: 日々の経営判断用。PC画面での利用を前提とし、印刷は必須としない。
+- 成果物2 REPORT: 部門別累計PLと詳細分析用。A4印刷・PDFに対応する。
+- 成果物3 EXECUTIVE_REPORT: 金融機関、税理士、役員会、経営会議、補助金申請への提出用経営サマリー。
 
 ## シート責務
 
@@ -32,7 +35,7 @@
 | CALC | 月次・部門別集計 | 禁止 |
 | DASHBOARD | 部門別累計カード、前年同期比較、判断メモ、参考グラフ | メモのみ |
 | REPORT | 部門別累計PL、前年同期累計比較、製造経費累計内訳 | 禁止 |
-| EXECUTIVE_REPORT | 社外・会議提出用の主要KPI、部門別前年比較、コメント、経営者メモ | コメント・メモのみ |
+| EXECUTIVE_REPORT | 経営サマリー・提出資料 | 禁止 |
 
 ## 入力契約
 
@@ -60,6 +63,8 @@ DATAの1行は1会計明細。入力列は `計上日 / 部門 / 勘定科目 / 
 - REPORT: CALCをXLOOKUPで取得して表示する。SUMIFSとDATA参照は禁止。
 - DASHBOARD: REPORTとCALCのグラフ用出力を直接表示する。SUMIFS、XLOOKUP、DATA参照は禁止。
 - EXECUTIVE_REPORT: CALCの計算済み結果だけをXLOOKUPで表示する。DATA参照と再集計は禁止。
+
+REPORT、DASHBOARD、EXECUTIVE_REPORTはCALCから並列参照し、表示成果物同士を計算経路として直列接続しない。
 
 ## 変更手順
 
