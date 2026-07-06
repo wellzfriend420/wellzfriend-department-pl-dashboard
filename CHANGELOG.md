@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-06 — clone・実運用手順
+
+- 初心者向けの `SETUP.md` を追加。
+- cloneは設計・保守用、実運用はGoogle Driveの親テンプレートをコピーする方針を明文化。
+- GitHubの保存対象、Apps Script未使用、WFSの更新フローをREADMEへ追記。
+- DATABASE、Google Drive、スプレッドシート仕様、テストケースの旧記述をv0.2へ統一。
+
 ## 2026-07-04 — v0.2
 
 - 表示月の月初・月末差を吸収する数式へ修正。
