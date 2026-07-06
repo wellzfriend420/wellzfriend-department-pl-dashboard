@@ -9,6 +9,7 @@
 5. CALC
 6. DASHBOARD
 7. REPORT
+8. EXECUTIVE_REPORT
 
 ## Formula boundaries
 
@@ -19,6 +20,8 @@
 - REPORT: CALCの計算済み列をXLOOKUPで表示する。SUMIFSとDATA参照は禁止する
 - DASHBOARD: REPORTおよびCALCのグラフ用出力を直接参照する。SUMIFS、XLOOKUP、DATA参照は禁止する
 - DASHBOARD: 部門別累計売上、営業利益、利益率、前年同期比を主役とする
+- EXECUTIVE_REPORT: CALCの計算済み結果をXLOOKUPで表示する。SUMIFSとDATA参照は禁止する
+- EXECUTIVE_REPORT: A4横1枚の提出用資料とし、コメント欄・経営者メモ欄以外は表示専用とする
 - 月次推移グラフ: 補助情報として残し、主判断には使用しない
 - 当期累計: SETTINGSの会計年度開始月から表示月まで
 - 前年同期累計: 当期累計期間の12か月前

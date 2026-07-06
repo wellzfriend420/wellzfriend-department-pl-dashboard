@@ -22,7 +22,7 @@ GitHubからのcloneと、Googleスプレッドシートの導入は別の作業
 |---|---|---|
 | SSD | 開発工房 | cloneしたリポジトリ、設計変更、テスト |
 | GitHub | 設計図書館 | 設計書、README_AI、テスト、変更履歴、コード |
-| Google Drive / Templates | 親テンプレート | `TPL_部門別損益ダッシュボード_v0.5` |
+| Google Drive / Templates | 親テンプレート | `TPL_部門別損益ダッシュボード_v0.6` |
 | Google Drive / Customers | 実運用 | 会社・案件ごとにコピーしたスプレッドシート |
 | 各会社統合DB | 業務データの正本 | 将来連携する会計・業務データ |
 
@@ -44,7 +44,7 @@ cd wellzfriend-department-pl-dashboard
 ## 4. 親テンプレートから実運用ファイルを作る
 
 1. Google Driveで `WellzFriend/Templates/Department PL Dashboard` を開きます。
-2. `TPL_部門別損益ダッシュボード_v0.5` を開き、版が正しいことを確認します。
+2. `TPL_部門別損益ダッシュボード_v0.6` を開き、版が正しいことを確認します。
 3. 親テンプレートを直接編集せず、「コピーを作成」を選びます。
 4. コピー先を `WellzFriend/Customers/<会社名または案件名>` にします。フォルダがなければ作成します。
 5. ファイル名を `<会社名または案件名>_部門別損益ダッシュボード` に変更します。
@@ -84,11 +84,24 @@ cd wellzfriend-department-pl-dashboard
 - REPORTの当期累計が会計年度開始月から表示月までの合計になっている。
 - REPORTの前年同期累計が前年の同じ期間になっている。
 - 前年同期累計が当期累計の12か月前の同期間を参照している。
+- EXECUTIVE_REPORTに会社名、対象期間、最終更新日、主要KPIと4部門の前年差が表示される。
+- EXECUTIVE_REPORTにDATA直接参照やSUMIFSがなく、CALCの計算済み結果だけを参照している。
 - `#REF!`、`#DIV/0!`、`#VALUE!`、`#N/A`などのエラーがない。
 
 確認内容は [tests/TEST_CASES.md](tests/TEST_CASES.md) に沿って実施します。合格後、実運用を開始します。
 
-## 8. 改修・バージョンアップ
+## 8. EXECUTIVE_REPORTをPDFで利用する
+
+1. `EXECUTIVE_REPORT` シートを開きます。
+2. コメント欄と経営者メモ欄へ、提出先に必要な説明だけを記入します。
+3. `ファイル` → `印刷` を選びます。
+4. 印刷対象を `現在のシート`、用紙サイズを `A4`、ページの向きを `横向き` にします。
+5. スケールを `幅に合わせる` にし、プレビューが1ページであることを確認します。
+6. PDFとして保存し、会社名・対象期間・最終更新日・数値・コメントを確認してから提出します。
+
+EXECUTIVE_REPORTの数値セルは編集しません。数値を修正する場合は、DATA、SETTINGS、CALCの順に原因を確認します。
+
+## 9. 改修・バージョンアップ
 
 1. SSDのcloneで設計資料・仕様・テストを更新します。
 2. テスト合格後、README_AIとCHANGELOGを更新します。
@@ -99,10 +112,11 @@ cd wellzfriend-department-pl-dashboard
 
 既存のCustomersファイルは自動更新されません。運用データを保護するため、変更点を確認してバックアップを作成し、案件ごとに移行します。
 
-## 9. 禁止事項
+## 10. 禁止事項
 
 - 親テンプレートを顧客運用に直接使用しない。
 - Customersの運用ファイルをGitHubへ保存しない。
 - 顧客・個人・契約・請求・認証情報をリポジトリへコミットしない。
 - CALC、DASHBOARD、REPORTの数式を利用者判断で直接変更しない。
+- EXECUTIVE_REPORTはコメント欄と経営者メモ欄以外を直接変更しない。
 - 廃止したテンプレートVersionを削除・再利用しない。

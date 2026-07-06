@@ -19,6 +19,7 @@
 - 主画面: 部門別累計PL、売上成長率、営業利益増減、営業利益率
 - KPI: 売上、粗利益、営業利益、粗利率、営業利益率
 - グラフ: 売上推移、利益推移、部門別売上、部門別営業利益
+- 提出資料: A4横1枚のEXECUTIVE_REPORT
 
 ## シート責務
 
@@ -31,6 +32,7 @@
 | CALC | 月次・部門別集計 | 禁止 |
 | DASHBOARD | 部門別累計カード、前年同期比較、判断メモ、参考グラフ | メモのみ |
 | REPORT | 部門別累計PL、前年同期累計比較、製造経費累計内訳 | 禁止 |
+| EXECUTIVE_REPORT | 社外・会議提出用の主要KPI、部門別前年比較、コメント、経営者メモ | コメント・メモのみ |
 
 ## 入力契約
 
@@ -51,18 +53,19 @@ DATAの1行は1会計明細。入力列は `計上日 / 部門 / 勘定科目 / 
 
 ## 参照方向
 
-`DATA → CALC → REPORT → DASHBOARD` を唯一の参照方向とする。
+`DATA → CALC → REPORT / DASHBOARD / EXECUTIVE_REPORT` を唯一の参照方向とする。
 
 - DATA: 入力明細と自動分類だけを保持する。
 - CALC: 月次、累計、前年同期、部門比較、製造経費科目内訳を計算する唯一のシート。
 - REPORT: CALCをXLOOKUPで取得して表示する。SUMIFSとDATA参照は禁止。
 - DASHBOARD: REPORTとCALCのグラフ用出力を直接表示する。SUMIFS、XLOOKUP、DATA参照は禁止。
+- EXECUTIVE_REPORT: CALCの計算済み結果だけをXLOOKUPで表示する。DATA参照と再集計は禁止。
 
 ## 変更手順
 
 1. 目的と受入条件を更新する。
 2. SETTINGSと入力契約への影響を確認する。
-3. CALC、REPORT、DASHBOARDの順に変更する。
+3. CALC、REPORT、DASHBOARD、EXECUTIVE_REPORTの順に変更する。
 4. `tests/TEST_CASES.md`を実施する。
 5. CHANGELOGを更新する。
 

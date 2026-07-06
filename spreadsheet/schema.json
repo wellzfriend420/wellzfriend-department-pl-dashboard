@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 5,
-  "templateVersion": "0.5",
+  "schemaVersion": 6,
+  "templateVersion": "0.6",
   "spreadsheetId": "1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q",
   "sheets": [
     "README_AI",
@@ -9,7 +9,8 @@
     "DATA",
     "CALC",
     "DASHBOARD",
-    "REPORT"
+    "REPORT",
+    "EXECUTIVE_REPORT"
   ],
   "departments": ["れんこん加工", "青果加工", "共通"],
   "plCategories": [
@@ -23,9 +24,11 @@
   "reportMode": "department_cumulative_pl",
   "dashboardFocus": "department_growth_and_profitability",
   "calculationLayer": "CALC",
-  "referenceFlow": ["DATA", "CALC", "REPORT", "DASHBOARD"],
+  "referenceFlow": ["DATA", "CALC", "REPORT", "DASHBOARD", "EXECUTIVE_REPORT"],
   "reportFormulaPolicy": "lookup_only_no_sumifs_no_data_reference",
   "dashboardFormulaPolicy": "direct_reference_only_no_sumifs_no_xlookup_no_data_reference",
+  "executiveReportFormulaPolicy": "calc_lookup_only_no_sumifs_no_data_reference",
+  "executiveReportPrintLayout": "A4_landscape_single_page",
   "fiscalYearStartSource": "SETTINGS!B6",
   "displayMonthSource": "SETTINGS!B7",
   "allocation": {"enabled": false, "commonDepartment": "共通"}

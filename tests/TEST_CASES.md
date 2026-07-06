@@ -25,6 +25,10 @@
 | T-021 | REPORT表示専用 | SUMIFSとDATA直接参照が存在しない | PASS |
 | T-022 | DASHBOARD表示専用 | SUMIFS・XLOOKUP・DATA直接参照が存在しない | PASS |
 | T-023 | サンプル重複防止 | 実運用DATAに旧サンプル外注加工費が残らない | PASS |
+| T-024 | EXECUTIVE_REPORT主要範囲 | 会社名・期間・更新日・主要KPI・4部門比較を表示 | PASS |
+| T-025 | EXECUTIVE_REPORT表示専用 | DATA直接参照とSUMIFSが存在せずCALC結果だけを参照 | PASS |
+| T-026 | Executive前年同期比較 | 売上・粗利益・営業利益の前年同期間累計と前年差がCALCと一致 | PASS |
+| T-027 | Executive印刷 | A4横・現在のシート・幅に合わせる設定で1ページに収まる | PASS |
 
 ## 2026-07-04検証
 
@@ -37,3 +41,5 @@ DATA、CALC、DASHBOARD、REPORTの主要範囲を読み戻し、月末日指定
 REPORTとDASHBOARDを部門別累計中心へ再構成し、前月比較を削除。部門別当期累計、前年同期累計、成長率、営業利益増減、利益率を読み戻し、数式エラーがないことを確認。前年データがない部門は「前年データなし」と表示されることを確認。
 
 外注加工費についてDATA・CALC・REPORTを同一期間で照合。表示層の全数式を検査し、REPORTにSUMIFS・DATA参照がなく、DASHBOARDにSUMIFS・XLOOKUP・DATA参照がないことを確認。
+
+EXECUTIVE_REPORTのA1:O23を読み戻し、主要KPI、4部門の当期累計・前年同期累計・前年差がCALCと一致することを確認。53個の表示式にDATA直接参照とSUMIFSがなく、数式エラーがないことを確認。印刷プレビューでA4横1ページに収まることを確認。
