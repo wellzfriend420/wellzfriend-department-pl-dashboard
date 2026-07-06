@@ -1,6 +1,6 @@
 # Department PL Dashboard
 
-会計試算表を正規化して貼り付け、部門別の当期累計PL・前年同期累計・利益率・経営判断指標を生成するMVPです。会社全体PLの代替ではなく、部門を伸ばす・改善する・縮小する判断を支援します。親テンプレートの現行版は `v0.4` です。
+会計試算表を正規化して貼り付け、部門別の当期累計PL・前年同期累計・利益率・経営判断指標を生成するMVPです。会社全体PLの代替ではなく、部門を伸ばす・改善する・縮小する判断を支援します。親テンプレートの現行版は `v0.5` です。
 
 ## WFS Status
 
@@ -25,7 +25,7 @@
 
 ## Google Sheets
 
-- Template: `TPL_部門別損益ダッシュボード_v0.4`
+- Template: `TPL_部門別損益ダッシュボード_v0.5`
 - Spreadsheet ID: `1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q`
 - URL: https://docs.google.com/spreadsheets/d/1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q/edit
 
@@ -39,6 +39,7 @@
 - `TODO.md`: 改善候補
 - `tests/TEST_CASES.md`: 検証仕様と結果
 - `docs/WFS_CANDIDATES.md`: 標準化候補
+- `docs/CALCULATION_AUDIT.md`: 集計経路、照合方法、禁止する重複計算
 
 ## GitHubに保存するもの
 

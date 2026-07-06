@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-06 — v0.5
+
+- 集計経路を `DATA → CALC → REPORT → DASHBOARD` へ統一。
+- CALCへ月次科目内訳、当期累計、前年同期累計、部門比較、グラフ用出力を集約。
+- REPORTのSUMIFSとDATA直接参照を廃止。
+- DASHBOARDのSUMIFSとXLOOKUPを廃止し、参照表示だけに限定。
+- 外注加工費をDATA・CALC・REPORTの三段階で照合。
+- 実運用ファイルに残っていた旧サンプル外注加工費の重複を除外。
+- 親テンプレートを `TPL_部門別損益ダッシュボード_v0.5` へ更新。
+
 ## 2026-07-06 — v0.4
 
 - REPORTを単月PLから部門別累計PLへ再設計。

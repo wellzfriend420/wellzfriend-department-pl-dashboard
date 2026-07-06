@@ -15,8 +15,9 @@
 - DATA A:E: input
 - DATA F:G: derived month and PL category
 - CALC: 36 months × `3 departments + total`
-- DASHBOARD: CALCを参照する
-- REPORT: 部門別の当期累計PLを主表とし、前年同期累計比較と製造経費累計内訳を表示する
+- CALC: 月次、当期累計、前年同期累計、成長率、部門比較、製造経費科目内訳をすべて計算する
+- REPORT: CALCの計算済み列をXLOOKUPで表示する。SUMIFSとDATA参照は禁止する
+- DASHBOARD: REPORTおよびCALCのグラフ用出力を直接参照する。SUMIFS、XLOOKUP、DATA参照は禁止する
 - DASHBOARD: 部門別累計売上、営業利益、利益率、前年同期比を主役とする
 - 月次推移グラフ: 補助情報として残し、主判断には使用しない
 - 当期累計: SETTINGSの会計年度開始月から表示月まで

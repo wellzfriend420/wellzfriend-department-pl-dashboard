@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 4,
-  "templateVersion": "0.4",
+  "schemaVersion": 5,
+  "templateVersion": "0.5",
   "spreadsheetId": "1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q",
   "sheets": [
     "README_AI",
@@ -22,6 +22,10 @@
   "reportCumulativeColumns": ["当期累計", "前年同期累計"],
   "reportMode": "department_cumulative_pl",
   "dashboardFocus": "department_growth_and_profitability",
+  "calculationLayer": "CALC",
+  "referenceFlow": ["DATA", "CALC", "REPORT", "DASHBOARD"],
+  "reportFormulaPolicy": "lookup_only_no_sumifs_no_data_reference",
+  "dashboardFormulaPolicy": "direct_reference_only_no_sumifs_no_xlookup_no_data_reference",
   "fiscalYearStartSource": "SETTINGS!B6",
   "displayMonthSource": "SETTINGS!B7",
   "allocation": {"enabled": false, "commonDepartment": "共通"}
