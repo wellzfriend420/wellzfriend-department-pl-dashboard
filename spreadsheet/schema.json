@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 3,
-  "templateVersion": "0.3",
+  "schemaVersion": 4,
+  "templateVersion": "0.4",
   "spreadsheetId": "1pY1Q8tuJWJBq25zL-PKuOmygZ50XYffnJ6cRPKiym-Q",
   "sheets": [
     "README_AI",
@@ -20,6 +20,8 @@
     "販管費"
   ],
   "reportCumulativeColumns": ["当期累計", "前年同期累計"],
+  "reportMode": "department_cumulative_pl",
+  "dashboardFocus": "department_growth_and_profitability",
   "fiscalYearStartSource": "SETTINGS!B6",
   "displayMonthSource": "SETTINGS!B7",
   "allocation": {"enabled": false, "commonDepartment": "共通"}

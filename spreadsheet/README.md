@@ -16,9 +16,11 @@
 - DATA F:G: derived month and PL category
 - CALC: 36 months × `3 departments + total`
 - DASHBOARD: CALCを参照する
-- REPORT: PL集計はCALC、製造経費の勘定科目別内訳はDATAを参照する
-- REPORTの当期累計: SETTINGSの会計年度開始月から表示月まで
-- REPORTの前年同期累計: 当期累計期間の12か月前
+- REPORT: 部門別の当期累計PLを主表とし、前年同期累計比較と製造経費累計内訳を表示する
+- DASHBOARD: 部門別累計売上、営業利益、利益率、前年同期比を主役とする
+- 月次推移グラフ: 補助情報として残し、主判断には使用しない
+- 当期累計: SETTINGSの会計年度開始月から表示月まで
+- 前年同期累計: 当期累計期間の12か月前
 
 ## Rebuild policy
 
